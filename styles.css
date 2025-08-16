@@ -1,0 +1,63 @@
+:root { --bg: #0b0b0b; --fg: #f3f3f3; --muted:#9aa0a6; --card:#111; --border:#202124; --accent:#6ee7b7; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--fg); }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+
+.nav { position: sticky; top: 0; background: rgba(11,11,11,0.7); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); z-index: 10; }
+.nav-inner { display:flex; align-items:center; justify-content: space-between; padding: .9rem 0; }
+.brand { font-weight:600; letter-spacing:.2px; }
+.links a { opacity:.85; margin-left:1rem; font-size:.95rem; }
+.links a:hover { opacity:1; }
+
+.hero { display:grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; padding: 5rem 0 2rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .18em; color: var(--muted); font-size: .72rem; }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: .5rem 0 0; }
+.lead { margin-top: 1rem; color: #d7d7d7; font-size: 1.05rem; max-width: 54ch; }
+
+.cta-row { display:flex; gap:.75rem; margin-top:1.25rem; flex-wrap: wrap; }
+.btn { background: var(--fg); color: #111; border-radius: 999px; padding: .65rem 1rem; font-weight:600; border:1px solid transparent; }
+.btn.outline { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn:hover { transform: translateY(-1px); }
+.socials { margin-top: .9rem; display:flex; gap: .9rem; color: var(--muted); font-size:.95rem; }
+
+.hero-right .photo { border-radius: 24px; overflow: hidden; border:1px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+.hero-right img { width:100%; height:100%; object-fit:cover; display:block; }
+
+.stats { display:grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; margin: 1rem 0 2rem; }
+.stat { border:1px solid var(--border); border-radius: 16px; padding: .9rem; text-align:center; }
+.stat .k { text-transform: uppercase; letter-spacing:.16em; color: var(--muted); font-size:.7rem; }
+.stat .v { font-weight:600; font-size:1.2rem; margin-top:.25rem; }
+
+.cards h2 { margin-top: 3rem; }
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-top: 1rem; }
+.card { border:1px solid var(--border); border-radius: 16px; padding: 1rem; background: var(--card); }
+.card h3 { margin: .25rem 0 .5rem; font-size:1.05rem; }
+.card ul { margin: 0; padding-left: 1.1rem; color: #d7d7d7; }
+.card p { color: #d7d7d7; }
+.tag { display:inline-block; font-size:.7rem; padding:.2rem .5rem; border:1px solid var(--border); border-radius:999px; margin-right:.4rem; color:#cfd2d5; }
+.card .meta { color:#A9AFB8; font-size:.85rem; margin: .1rem 0 .6rem; }
+.card .read { display:inline-block; margin-top:.4rem; opacity:.9; }
+
+.blog-head { display:flex; align-items:baseline; justify-content: space-between; }
+.all-posts { color: var(--muted); }
+
+.photos .photos-head { display:flex; align-items:baseline; justify-content: space-between; }
+.photo-grid { margin-top: .75rem; display:grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+.photo-grid img { width:100%; aspect-ratio: 4/5; object-fit:cover; border-radius:16px; border:1px solid var(--border); }
+
+.contact .contact-card { border:1px solid var(--border); border-radius:24px; padding: 1.2rem; display:flex; justify-content: space-between; align-items: center; gap: 1rem; background: var(--card); margin: 3rem 0; }
+.contact .contact-card p { color:#d7d7d7; max-width: 60ch; }
+.contact-actions { display:flex; gap:.75rem; }
+
+footer.footer { border-top: 1px solid var(--border); padding: 1.2rem 0 3rem; color: var(--muted); text-align:center; margin-top: 1rem; }
+
+section.container > h2 { font-size:1.5rem; margin: 2.5rem 0 .5rem; }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+  .links { display:none; }
+}
