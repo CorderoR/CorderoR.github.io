@@ -70,5 +70,5 @@ section.container > h2 { font-size:1.5rem; margin: 2.5rem 0 .5rem; }
   .links { display:none; }
 }
 
-/* About paragraph tone */
-#about p { color: #626B7A; }
+section#about > p { color: #626B7A; }
+
