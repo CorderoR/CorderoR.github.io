@@ -40,8 +40,8 @@ h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: .5rem 0 0; }
 .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-top: 1rem; }
 .card { border:1px solid var(--border); border-radius: 16px; padding: 1rem; background: var(--card); box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
 .card h3 { margin: .25rem 0 .5rem; font-size:1.05rem; }
-.card ul { margin: 0; padding-left: 1.1rem; color: #6b7280; /*color: #d7d7d7;*/ }
-.card p { color: #6b7280; /*color: #d7d7d7;*/ }
+.card ul { margin: 0; padding-left: 1.1rem; color: #475569; /*color: #d7d7d7;*/ }
+.card p { color: #475569; /*color: #d7d7d7;*/ }
 .tag { display:inline-block; font-size:.7rem; padding:.2rem .5rem; border:1px solid var(--border); border-radius:999px; margin-right:.4rem; color:#cfd2d5; }
 .card .meta { color:#A9AFB8; font-size:.85rem; margin: .1rem 0 .6rem; }
 .card .read { display:inline-block; margin-top:.4rem; opacity:.9; }
