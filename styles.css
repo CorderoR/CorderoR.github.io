@@ -92,3 +92,21 @@ a.btn.outline {
   color: var(--fg) !important;
   border-color: var(--border) !important;
 }
+
+/* Center the four stat "pills" as a group */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 240px); /* card width */
+  justify-content: center;                 /* center the whole row */
+  gap: 12px;
+  margin: 1rem auto 2rem;                  /* centers the grid block itself */
+}
+
+/* Responsive: 2-wide on medium, 1-wide on small, still centered */
+@media (max-width: 1100px) {
+  .stats { grid-template-columns: repeat(2, 240px); }
+}
+@media (max-width: 560px) {
+  .stats { grid-template-columns: 1fr; }
+  .stat  { max-width: 340px; width: 90%; justify-self: center; }
+}
