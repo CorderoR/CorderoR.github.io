@@ -70,4 +70,20 @@ section.container > h2 { font-size:1.5rem; margin: 2.5rem 0 .5rem; }
   .links { display:none; }
 }
 
-#about p { color: #626B7A !important; }
+/* Primary button — readable on dark pill */
+.btn {
+  background: #111;     /* keep the black pill */
+  color: #fff;          /* make the text white */
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+/* Outline button stays minimal on light background */
+.btn.outline {
+  background: transparent;
+  color: var(--fg);
+  border-color: var(--border);
+}
