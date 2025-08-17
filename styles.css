@@ -70,20 +70,25 @@ section.container > h2 { font-size:1.5rem; margin: 2.5rem 0 .5rem; }
   .links { display:none; }
 }
 
-/* Primary button — readable on dark pill */
-.btn {
-  background: #111;     /* keep the black pill */
-  color: #fff;          /* make the text white */
+/* Force readable text inside black pill buttons */
+:root { --btn-bg: #111; --btn-fg: #fff; }
+
+a.btn,
+a.btn:link,
+a.btn:visited,
+.cta-row a.btn,
+.contact-actions a.btn {
+  background: var(--btn-bg) !important;
+  color: var(--btn-fg) !important;
 }
 
-.btn:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.05);
-}
+a.btn * { color: inherit !important; } /* if the label is wrapped in a span */
 
-/* Outline button stays minimal on light background */
-.btn.outline {
-  background: transparent;
-  color: var(--fg);
-  border-color: var(--border);
+a.btn:hover { filter: brightness(1.05); }
+
+/* Outline button stays minimal on light bg */
+a.btn.outline {
+  background: transparent !important;
+  color: var(--fg) !important;
+  border-color: var(--border) !important;
 }
