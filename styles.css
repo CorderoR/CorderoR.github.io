@@ -23,9 +23,6 @@ a { color: inherit; text-decoration: none; }
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: .5rem 0 0; }
 .lead { margin-top: 1rem; color: var(--muted-strong); /* #626B7A #d7d7d7*/ font-size: 1.05rem; max-width: 54ch; }
 
-/* About section paragraph */
-#about p { color: var(--muted-strong); }
-
 .cta-row { display:flex; gap:.75rem; margin-top:1.25rem; flex-wrap: wrap; }
 .btn { background: var(--fg); color: #111; border-radius: 999px; padding: .65rem 1rem; font-weight:600; border:1px solid transparent; }
 .btn.outline { background: transparent; color: var(--fg); border-color: var(--border); }
@@ -72,3 +69,6 @@ section.container > h2 { font-size:1.5rem; margin: 2.5rem 0 .5rem; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); }
   .links { display:none; }
 }
+
+/* About paragraph tone */
+#about p { color: #626B7A; }
