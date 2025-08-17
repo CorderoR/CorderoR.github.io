@@ -5,6 +5,7 @@
   --card: #ffffff;    /* card/background surfaces */
   --border: #e5e7eb;  /* subtle borders */
   --accent: #0ea5e9;  /* accent (buttons/links if you use it) */
+  --muted-strong: #626B7A;
 }/*{ --bg: #0b0b0b; --fg: #f3f3f3; --muted:#9aa0a6; --card:#111; --border:#202124; --accent:#6ee7b7; } DARM MODE TEMPLATE*/
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--fg); }
@@ -20,7 +21,10 @@ a { color: inherit; text-decoration: none; }
 .hero { display:grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; padding: 5rem 0 2rem; }
 .eyebrow { text-transform: uppercase; letter-spacing: .18em; color: var(--muted); font-size: .72rem; }
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: .5rem 0 0; }
-.lead { margin-top: 1rem; color: #626B7A /* #d7d7d7*/; font-size: 1.05rem; max-width: 54ch; }
+.lead { margin-top: 1rem; color: var(--muted-strong); /* #626B7A #d7d7d7*/ font-size: 1.05rem; max-width: 54ch; }
+
+/* About section paragraph */
+#about p { color: var(--muted-strong); }
 
 .cta-row { display:flex; gap:.75rem; margin-top:1.25rem; flex-wrap: wrap; }
 .btn { background: var(--fg); color: #111; border-radius: 999px; padding: .65rem 1rem; font-weight:600; border:1px solid transparent; }
@@ -54,7 +58,7 @@ h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: .5rem 0 0; }
 .photo-grid img { width:100%; aspect-ratio: 4/5; object-fit:cover; border-radius:16px; border:1px solid var(--border); }
 
 .contact .contact-card { border:1px solid var(--border); border-radius:24px; padding: 1.2rem; display:flex; justify-content: space-between; align-items: center; gap: 1rem; background: var(--card); margin: 3rem 0; }
-.contact .contact-card p { color: #626B7A;/* color: #d7d7d7;*/ max-width: 60ch; }
+.contact .contact-card p { color: var(--muted-strong); /*color: #626B7A; color: #d7d7d7;*/ max-width: 60ch; }
 .contact-actions { display:flex; gap:.75rem; }
 
 footer.footer { border-top: 1px solid var(--border); padding: 1.2rem 0 3rem; color: var(--muted); text-align:center; margin-top: 1rem; }
