@@ -24,7 +24,7 @@ h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: .5rem 0 0; }
 .lead { margin-top: 1rem; color: var(--muted-strong); /* #626B7A #d7d7d7*/ font-size: 1.05rem; max-width: 54ch; }
 
 .cta-row { display:flex; gap:.75rem; margin-top:1.25rem; flex-wrap: wrap; }
-.btn { background: var(--fg); color: #111; border-radius: 999px; padding: .65rem 1rem; font-weight:600; border:1px solid transparent; }
+.btn { background: #111; color: #fff; border-radius: 999px; padding: .65rem 1rem; font-weight:600; border:1px solid transparent; }
 .btn.outline { background: transparent; color: var(--fg); border-color: var(--border); }
 .btn:hover { transform: translateY(-1px); }
 .socials { margin-top: .9rem; display:flex; gap: .9rem; color: var(--muted); font-size:.95rem; }
