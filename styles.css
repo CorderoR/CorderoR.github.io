@@ -110,3 +110,14 @@ a.btn.outline {
   .stats { grid-template-columns: 1fr; }
   .stat  { max-width: 340px; width: 90%; justify-self: center; }
 }
+
+/* Smooth transforms for photos */
+.photo-grid img { transition: transform .25s ease, object-position .25s ease; }
+
+/* Persistent zoom-in helpers */
+.zoom-105 { transform: scale(1.05); }
+.zoom-110 { transform: scale(1.10); }
+.zoom-125 { transform: scale(1.25); }
+
+/* Optional: hover zoom for all photos (remove if you don't want hover) */
+.photo-grid img:hover { transform: scale(1.05); }
