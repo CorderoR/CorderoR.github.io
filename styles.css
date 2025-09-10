@@ -66,6 +66,7 @@ section.container > h2 { font-size:1.5rem; margin: 2.5rem 0 .5rem; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
+  .grid.two-col { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .photo-grid { grid-template-columns: repeat(2, 1fr); }
   .links { display:none; }
